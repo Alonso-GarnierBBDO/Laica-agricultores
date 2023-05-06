@@ -1,0 +1,90 @@
+.flower{
+    position: absolute;
+    width: 57px;
+    pointer-events: none;
+}
+
+.flower_one {
+    top: 50px;
+    left: 60px;
+    animation: florOne 3s ease infinite;
+    transform: rotate(-7deg);
+}
+
+@keyframes florOne {
+    0%{
+        transform: rotate(-7deg);  
+    }
+
+    50%{
+        transform: rotate(7deg);
+    }
+
+    100%{
+        transform: rotate(-7deg);
+    }
+}
+
+
+.flower_two{
+    top: 50px;
+    right: 60px;
+    transform: rotate(97deg);
+    animation: florTwo 3s ease infinite;
+}
+
+@keyframes florTwo {
+    0%{
+        transform: rotate(97deg);  
+    }
+
+    50%{
+        transform: rotate(83deg);
+    }
+
+    100%{
+        transform: rotate(97deg);
+    }
+}
+
+.flower_tree{
+    bottom: 50px;
+    right: 60px;
+    transform: rotate(-187deg);
+    animation: florTree 3s ease infinite;
+}
+
+@keyframes florTree {
+    0%{
+        transform: rotate(-187deg);  
+    }
+
+    50%{
+        transform: rotate(-173deg);
+    }
+
+    100%{
+        transform: rotate(-187deg);
+    }
+}
+
+.flower_fourt{
+    bottom: 50px;
+    left: 60px;
+    transform: rotate(-97deg);
+    animation: florFourt 3s ease infinite;
+}
+
+@keyframes florFourt {
+    0%{
+        transform: rotate(-97deg);  
+    }
+
+    50%{
+        transform: rotate(-83deg);
+    }
+
+    100%{
+        transform: rotate(-90deg);
+    }
+}

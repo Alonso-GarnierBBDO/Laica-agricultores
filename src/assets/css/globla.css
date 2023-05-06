@@ -1,0 +1,272 @@
+body,
+html,
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Fonst imports */
+
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url('../fonts/Quicksand-Bold.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url('../fonts/Quicksand-Regular.ttf');
+}
+
+
+:root{
+
+    /* Fonts Colors */
+
+    --color-primary: #0080C3;
+    --color-secundary: #1C1C1F;
+    --color-terciario: #FFFFFF;
+    --color-cuarto: #A3D300;
+    --color-quinto: #b5e0f7;
+    --color-sexto: rgb(209, 67, 67);
+    --color-setimo: #00CE7C;
+
+    /* Fonts Vars */
+
+    --font-primary: Quicksand-Bold;
+    --font-secundary: Quicksand-Regular;
+
+}
+
+
+/* Movile desing */
+
+@media (max-width: 700px) {
+
+
+    /* Header */
+
+    button.play_modal {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    header section.title_header {
+        right: auto !important;
+        bottom: 10% !important;
+        width: 78% !important;
+    }
+
+    .n-card.n-modal {
+        height: 100vh;
+    }
+
+    .content-agradecimiento {
+        grid-template-columns: 1fr !important;
+    }
+
+    .protagonistas{
+        height: auto !important;
+    }
+
+    .contenido-productores h2 {
+        font-size: 2rem !important;
+    }
+
+    /* Protanistas */
+
+    .logo_protagonistas img {
+        pointer-events: none;
+        width: 100%;
+    }
+
+    .logo_protagonistas {
+        max-width: 100vw !important;
+    }
+
+    .protagonistas-title img{
+        max-width: 75vw !important;
+    }
+
+    .protagonistas {
+        padding-top: 70px !important;
+    }
+
+    .protagonistasItems .items-protagonistas .image-protagonistas {
+        width: 90% !important;
+        border-radius: 10px !important;
+        margin: auto;
+    }
+
+    .protagonistasItems .name-protagonista {
+        margin-top: 18px !important;
+    }
+
+    .protagonistasItems{
+        row-gap: 0px !important;
+    }
+
+    body .line-style-protagonista {
+        display: none !important;
+    }
+
+    body iframe {
+        min-height: 100%;
+    }
+
+    .n-card > .n-card__content, .n-card > .n-card__footer{
+        padding: 0px !important;
+    }
+
+    .img-logo-modal-protagonista {
+        display: none !important;
+    }
+
+    /* Productores */
+
+    body .flower_one {
+        top: 30px;
+        left: 20px;
+    }
+
+    body .flower {
+        width: 37px;
+    }
+
+    body .flower_two {
+        top: 30px;
+        right: 20px;
+    }
+
+    body .flower_tree {
+        bottom: 30px;
+        right: 20px;
+    }
+
+    body .flower_fourt {
+        bottom: 30px;
+        left: 20px;
+    }
+
+    body .contenido-productores {
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+
+    body .mapa svg {
+        max-height: 251px;
+    }
+
+    body .contenido-productores h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    body .contenido-productores h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0px 58px;
+        line-height: 22px;
+    }
+
+    body .contenido-productores h2 {
+        font-size: 1.4rem !important;
+        text-align: center;
+    }
+
+    body .contenido-productores div {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    body .lluvia .lineas .line-thanks{
+        width: 3px;
+    }
+
+    /* Agradecimiento */
+
+    body  .agradecimiento{
+        height: auto;
+    }
+
+    body .form-agradecimiento form {
+        width: 80%;
+        margin: auto;
+        border-radius: 16px;
+        padding: 20px;
+    }
+
+    body .lluvia {
+        height: 70px;
+    }
+
+    body .content-agradecimiento {
+        padding-top: 95px;
+        grid-gap: 31px;
+        margin-bottom: 37px;
+    }
+
+    body .content-agradecimiento > div:first-child{
+        grid-area: 2;
+    }
+
+    body .content-form-agradecimiento h2{
+        text-align: center;
+    }
+
+    .content-form-agradecimiento {
+        margin: 0px 39px;
+    }
+
+    body .content-form-agradecimiento img {
+        display: none;
+    }
+
+    body .content-form-agradecimiento p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    body .redes-sociales {
+        padding: 14px 0px;
+        row-gap: 21px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    body .message-content {
+        padding-top: 50px;
+        height: auto;
+    }
+
+    body .items-message{
+        width: 100vw;
+    }
+
+    body .marquee img{
+        width: auto !important;
+        height: 10px;
+    }
+
+    body .icon {
+        position: relative;
+        padding: 37px 0px;
+        display: flex;
+        flex-flow: column;
+        row-gap: 19px;
+    }
+
+
+    body .icon img {
+        width: 131px;
+    }
+
+    .lluvia .lineas .line-thanks{
+        z-index: 1 !important;
+    }
+
+}

@@ -1,0 +1,151 @@
+.protagonistas {
+    padding-top: 30px;
+    background-color: white !important;
+}
+
+.protagonistasItems{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100vw;
+    row-gap: 30px;
+    column-gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.protagonistasItems .items-protagonistas {
+    max-width: 330px;
+    width: 100%;
+}
+
+.protagonistasItems .items-protagonistas img{
+    width: 100%;
+    height: 100%;
+}
+
+.protagonistasItems .n-button .n-button__content {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.protagonistasItems .items-protagonistas .image-protagonistas {
+    min-height: 294px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    transition: .2s ease;
+}
+
+.protagonistasItems button.n-button.n-button--default-type.n-button--medium-type {
+    height: auto;
+    padding: 0px;
+    width: 100%;
+    border: none;
+}
+
+.protagonistasItems .n-button .n-button__border,
+.protagonistasItems .n-button:not(.n-button--disabled):hover .n-button__state-border,
+.protagonistasItems .n-button .n-button__border,
+.protagonistasItems .n-button:not:hover .n-button__state-border {
+    border: none !important;
+}
+
+.protagonistasItems .name-protagonista {
+    margin-top: 30px;
+    font-family: Quicksand-Bold;
+    font-size: 1.6rem;
+    color: var(--color-primary);
+}
+
+.protagonistasItems .content-protagonista:hover .image-protagonistas{
+    transform: scale(1.1);
+}
+
+.protagonistasItems .content-protagonista{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.protagonistasItems .line-style-protagonista{
+    margin-top: 35px;
+    pointer-events: none;
+}
+
+/* Modal protagonistas Styles */
+
+.card-protagonista.n-card.n-modal {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: var(--color-quinto);
+}
+
+ .img-logo-modal-protagonista {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-logo-modal-protagonista img {
+    height: 54px;
+    pointer-events: none;
+}
+
+.content-modal-protagonista{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-flow: column;
+    margin-top: 65px;
+}
+
+.content-modal-protagonista h3 {
+    margin-top: 22px;
+    color: var(--color-primary);
+}
+
+.close-modal-protagonista{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 42px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transform: rotate(0deg);
+    transition: .2s ease;
+}
+
+.close-modal-protagonista:hover{
+    transform: rotate(90deg);
+}
+
+
+.video-iframe-youtuve {
+    width: 100%;
+    height: 100%;
+}
+
+.n-card__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-protagonista.n-card.n-modal iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}

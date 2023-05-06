@@ -1,0 +1,24 @@
+.agradecimiento{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+
+.content-agradecimiento{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+    grid-gap: 100px;
+}
+
+@media (max-width: 1600px) {
+    .content-agradecimiento{
+        grid-template-columns: 35% 55%;
+    }
+}

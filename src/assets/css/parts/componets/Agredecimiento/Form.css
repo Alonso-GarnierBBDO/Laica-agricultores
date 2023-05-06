@@ -1,0 +1,186 @@
+.form-agradecimiento form {
+    border: 2px solid var(--color-primary);
+    border-radius: 32px;
+    padding: 16px 35px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 12px 0px 0px var(--color-primary);
+    -webkit-box-shadow: 10px 12px 0px 0px var(--color-primary);
+    -moz-box-shadow: 10px 12px 0px 0px var(--color-primary);
+    row-gap: 17px;
+    font-family: var( --font-secundary);
+    background-color: var(--color-terciario);
+}
+
+.form-agradecimiento .image img,
+.form-agradecimiento .input-file,
+.form-agradecimiento input,
+.form-agradecimiento textarea{
+    width: 100%;
+}
+
+.form-agradecimiento input:disabled,
+.form-agradecimiento textarea:disabled {
+    background: transparent;
+}
+
+.form-agradecimiento .image img{
+    pointer-events: none;
+}
+
+.form-agradecimiento .input-file-group {
+    display: flex;
+    flex-flow: row;
+    column-gap: 25px;
+}
+
+.form-agradecimiento label span{
+    color: var(--color-sexto);
+}
+
+.form-agradecimiento input,
+.form-agradecimiento textarea{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color-secundary);
+    padding: 5px 2px;
+    position: relative;
+    transition: .2s ease;
+    color: var(--color-primary);
+}
+
+.form-agradecimiento input:focus,
+.form-agradecimiento textarea:focus{
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.form-agradecimiento input.active,
+.form-agradecimiento textarea.active{
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.form-agradecimiento .send_form{
+    background-color: var(--color-setimo);
+    border: 2px solid var(--color-setimo);
+    color: var(--color-terciario);
+    padding: 8px 35px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: .2s ease;
+}
+
+.form-agradecimiento .send_form:hover{
+    background-color: var(--color-terciario);
+    color: var(--color-setimo);
+}
+
+.form-agradecimiento .send_form:active{
+    background-color: var(--color-setimo);
+    color: var(--color-terciario);
+}
+
+.form-agradecimiento .reglamento{
+    background-color: var(--color-terciario);
+    border: 2px solid var(--color-setimo);
+    color: var(--color-setimo);
+    padding: 8px 35px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: .2s ease;
+}
+
+.form-agradecimiento .reglamento:hover{
+    background-color: var(--color-setimo);
+    color: var(--color-terciario);
+}
+
+.form-agradecimiento .reglamento:active{
+    background-color: var(--color-terciario);
+    color: var(--color-setimo);
+}
+
+.error-message{
+    color: var(--color-sexto);
+    height: 35px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: .2s ease;
+    animation: validationError .4s ease;
+}
+
+@keyframes validationError {
+    0%{
+        height: 0px;
+    }
+
+    100%{
+        height: 35px;
+    }
+}
+
+button.send_form:disabled,
+button.send_form:disabled:hover,
+button.send_form:disabled:active {
+    opacity: 0.6;
+    background-color: var(--color-setimo);
+    border: 2px solid var(--color-setimo);
+    color: var(--color-terciario);
+}
+
+button.n-button.n-button--primary-type.n-button--small-type {
+    background: var(--color-setimo);
+    border: none !important;
+    border-radius: 18px;
+    box-shadow: none;
+}
+
+
+.n-dialog .n-dialog__close {
+    display: none !important;
+}
+
+.n-card.n-modal.mostra_reglamento {
+    max-width: 1184px;
+    height: 89vh;
+}
+
+object,
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.n-card {
+    height: 100%;
+    background: transparent !important;
+}
+
+
+.mostra_reglamento  .n-card__content {
+    padding: 21px !important;
+}
+
+@media (max-width: 700px){
+    .mostra_reglamento  .n-card__content {
+        padding: 0px !important;
+    }
+
+    body iframe {
+        min-height: 81%;
+        border-radius: 0px;
+    }
+
+    .n-card.n-modal.mostra_reglamento {
+        max-width: 1184px;
+        height: 100vh !important;
+    }
+
+    .n-card.n-modal {
+        border-radius: 0px !important;
+        overflow: hidden;
+    }
+}

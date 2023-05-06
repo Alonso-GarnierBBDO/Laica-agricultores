@@ -1,0 +1,43 @@
+.redes-sociales {
+    position: fixed;
+    top: calc(50% - 75px);
+    background-color: var(--color-secundary);
+    padding: 28px 7px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    z-index: 5;
+}
+
+.redes-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociales .twitter {
+    width: 60%;
+}
+
+.redes-sociales .facebook{
+    width: 50%;
+}
+
+.redes-sociales .instagram{
+    width: 50%;
+}
+
+.redes-sociales .youtuve{
+    width: 50%;
+}
+
+
+.n-popover-shared .n-popover-arrow-wrapper .n-popover-arrow,
+.n-popover:not(.n-popover--raw):not(.n-popover--scrollable):not(.n-popover--show-header-or-footer){
+    background-color: var(--color-primary);
+    z-index: 10 !important;
+}

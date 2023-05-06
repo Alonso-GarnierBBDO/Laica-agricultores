@@ -1,0 +1,29 @@
+.line-style-mensajes-one,
+.line-style-mensajes-two{
+    width: 100vw;
+}
+
+.line-style-mensajes-two{
+    margin-top: 20px;
+}
+
+.items-message{
+    background-color: white;
+    width: 33.33vw;
+    margin-left: 20px;
+    height: 148px;
+    border-radius: 26px;
+    display: flex;
+    padding: 33px;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.items-message h2{
+    font-family: var(--font-primary);
+}
+
+.items-message p{
+    margin: 0px;
+    font-family: var(--font-secundary);
+}

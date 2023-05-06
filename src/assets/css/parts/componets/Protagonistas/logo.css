@@ -1,0 +1,13 @@
+.logo_protagonistas{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+}
+
+.logo_protagonistas img{
+    max-width: 415px;
+    pointer-events: none;
+}
