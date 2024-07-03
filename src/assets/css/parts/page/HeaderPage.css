@@ -1,14 +1,143 @@
 header{
-    width: 100vw;
+    width: 90vw;
+    margin: auto;
     height: 100vh;
     background-color: var(--color-terciario);
-    background-image: url('../../../img/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-gap: 0px;
+}
+
+/* Header content */
+
+.person-img{
+    width: 100%;
+    height: 100%;
+}
+
+.background_imange{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../img/person_photo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .person-img img{
+    width: 100%;
+}
+
+header .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+header section.title_header .items img {
+    width: 53px;
+}
+
+header section.title_header .laica_logo {
+    max-width: 200px;
+    margin: auto;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+}
+
+
+header .bambu_item{
+    height: 45%;
+    position: relative;
+}
+
+.bambu_item img {
+    position: absolute;
+    bottom: 0px;
+}
+
+.person_items-logo{
+    display: none;
+}
+
+.person-img{
+    display: block;
+}
+
+.movile{
+    display: none;
+}
+
+.destok{
+    display: block;
+}
+
+@media (max-width: 700px) {
+
+    .destok{
+        display: none !important;
+    }
+
+    .movile{
+        display: block !important;
+    }
+
+    .person_items-logo{
+        display: block;
+    }
+
+    .person-img{
+        display: none;
+    }
+    header{
+        grid-template-columns: 1fr;
+    }   
+
+    header .items{
+        margin-top: 19px;
+    }
+
+    header section.title_header .laica_logo {
+        max-width: 160px;
+    }
+
+    header h1 {
+        font-size: 1.7rem !important;
+    }
+
+    header img.bambu {
+        height: 100%;
+    }
+
+    img.person_items-logo {
+        width: 100% !important;
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+    }
+
+    section.title_header {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+/* Modals */
+
+video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 header .n-modal {
@@ -69,16 +198,23 @@ button.play_modal img{
 }
 
 header section.title_header {
-    position: absolute;
-    width: 30vw;
-    right: 10%;
-    pointer-events: none;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    /* pointer-events: none; */
 }
 
 header section.title_header img{
     width: 100%;
 }
 
+header h1{
+    margin-bottom: 4px;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 2rem;    
+}
 
 button.n-base-close.n-base-close--absolute.n-card-header__close {
     width: 40px;

@@ -1,10 +1,12 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 export function animation() {
 
     if (window.innerWidth > 700) {
-        gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
 
         let panels = gsap.utils.toArray(".panel");
         // we'll create a ScrollTrigger for each panel just to track when each panel's top hits the top of the viewport (we only need this for snapping)
@@ -15,8 +17,7 @@ export function animation() {
         panels.forEach((panel, i) => {
           ScrollTrigger.create({
             trigger: panel,
-            start: () =>
-              panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
+            start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
             pin: true,
             pinSpacing: false,
           });
@@ -36,5 +37,6 @@ export function animation() {
             duration: 0.5,
           },
         });
+
     }
 }

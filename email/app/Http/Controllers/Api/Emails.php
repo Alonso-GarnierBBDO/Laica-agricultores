@@ -47,7 +47,7 @@ class Emails extends Controller
         $email = $request->email;
         $message = $request->message;
 
-        Mail::to('alonso.artavia@garnierbbdo.com')->send(new Message($name, $lastName, $phone, $email, $message));
+        Mail::to('psalazar@laica.co.cr')->send(new Message($name, $lastName, $phone, $email, $message));
 
         return response()->json([
             'data' => [

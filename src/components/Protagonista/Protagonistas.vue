@@ -3,6 +3,7 @@
         <div v-for="(item, index) in data" class="items-protagonistas" :class="`progranista-${index}`">
             <button @click="showModal[index] = true" class="content-protagonista">
                 <div class="image-protagonistas" :style="{ 'background-image': `url(${require(`@/assets/img/protagonistas/${item.img}`)})` }">
+                    <img src="@/assets/img/PLAY.svg" alt="">
                 </div>
                 <p class="name-protagonista">{{ item.name }}</p>
             </button>

@@ -1,8 +1,8 @@
 <template>
-    <div class="agradecimiento">
+    <div class="agradecimiento" id="agradecimiento">
         <Lluvia/>
 
-        <div class="content-agradecimiento">
+        <div class="content-agradecimiento" id="formulario">
             <div>
                 <Form @mensaje="getMessage" />
             </div>

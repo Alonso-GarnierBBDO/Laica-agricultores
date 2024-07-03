@@ -11,7 +11,7 @@
     row-gap: 30px;
     column-gap: 40px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .protagonistasItems .items-protagonistas {
@@ -38,6 +38,9 @@
     background-size: cover;
     border-radius: 20px;
     transition: .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .protagonistasItems button.n-button.n-button--default-type.n-button--medium-type {
@@ -55,14 +58,21 @@
 }
 
 .protagonistasItems .name-protagonista {
-    margin-top: 30px;
+    margin-top: 10px;
     font-family: Quicksand-Bold;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--color-primary);
+    margin-bottom: 0px;
+    transform: translateY(0px);
+    transition: .2s ease;
 }
 
 .protagonistasItems .content-protagonista:hover .image-protagonistas{
     transform: scale(1.1);
+}
+
+.protagonistasItems .content-protagonista:hover .name-protagonista{
+    transform: translateY(15px);
 }
 
 .protagonistasItems .content-protagonista{

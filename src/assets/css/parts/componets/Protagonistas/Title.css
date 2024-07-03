@@ -1,17 +1,19 @@
 .protagonistas-title h1{
-    margin-bottom: 20px;
+    margin-bottom: 4px;
     font-family: var(--font-primary);
     color: var(--color-primary);
     text-align: center;
+    font-size: 2rem;
 }
 
 .protagonistas-title img{
-    max-width: 480px;
+    max-width: 350px;
 }
 
 .protagonistas-title h2{
-    margin-top: 20px;
+    margin-top: 4px;
     font-family: var(--font-primary);
     color: var(--color-cuarto);
     text-align: center;
+    font-size: 2rem;
 }

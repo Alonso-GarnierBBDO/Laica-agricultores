@@ -184,7 +184,7 @@ body{
     }
 
     body .lluvia .lineas .line-thanks{
-        width: 3px;
+        width: 7px;
     }
 
     /* Agradecimiento */
@@ -220,10 +220,7 @@ body{
 
     .content-form-agradecimiento {
         margin: 0px 39px;
-    }
-
-    body .content-form-agradecimiento img {
-        display: none;
+        margin-right: 39px !important;
     }
 
     body .content-form-agradecimiento p {

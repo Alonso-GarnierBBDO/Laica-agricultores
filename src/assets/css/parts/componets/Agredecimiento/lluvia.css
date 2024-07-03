@@ -22,11 +22,12 @@
     width: 5px;
     height: 100%;
     background-color: var(--color-cuarto);
-    border-radius: 20px;
     /* animation: lluviaLineasImpares 2s ease infinite; */
     animation-delay: 0.3s;
     /* transform: translateY(-105%); */
     z-index: -1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* @keyframes lluviaLineasImpares {

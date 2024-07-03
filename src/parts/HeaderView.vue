@@ -1,54 +1,66 @@
 <template>
   <div>
-    <LaicaLogo />
     <RedesSociales />
 
     <header>
-
-    <button @click="showModal = true" class="play_modal">
-        <img src="@/assets/img/play.png" alt="">
-    </button>
-
-      <n-modal
-        v-model:show="showModal"
-        class="custom-card"
-        preset="card"
-        :style="bodyStyle"
-        :bordered="false"
-        size="huge"
-        :segmented="segmented"
-      >
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uxSzw3XsVkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </n-modal>
+      <div class="person-img">
+        <div class="background_imange"></div>
+      </div>
 
       <section class="title_header" title="Detras de la dulzura">
-        <img src="@/assets/img/tipografia.png" alt="">
+        <div class="items destok">
+          <img src="@/assets/img/nube.png" alt="" />
+          <img src="@/assets/img/sol.png" alt="" />
+        </div>
+        <div class="logo destok">
+          <img class="laica_logo" src="@/assets/img/Laica.svg" alt="" />
+        </div>
+        <h1 class="destok">Los protagonistas</h1>
+        <img class="destok" src="@/assets/img/Concepto.svg" alt="" />
+        <div class="bambu_item destok">
+          <img src="@/assets/img/bm.png" alt="" class="bambu" />
+        </div>
+
+        <div class="movile">
+          <div class="items">
+            <img src="@/assets/img/nube.png" alt="" />
+            <img src="@/assets/img/sol.png" alt="" />
+          </div>
+          <div class="logo">
+            <img class="laica_logo" src="@/assets/img/Laica.svg" alt="" />
+          </div>
+          <h1>Los protagonistas</h1>
+          <img src="@/assets/img/Concepto.svg" alt="" />
+          <div class="bambu_item">
+            <img src="@/assets/img/bm.png" alt="" class="bambu" />
+          </div>
+        </div>
+        <img
+          src="@/assets/img/person_photo.png"
+          alt=""
+          class="person_items-logo"
+        />
       </section>
-
-
     </header>
   </div>
 </template>
 
 <script>
-import LaicaLogo from "@/components/Header/LaicaLogo.vue";
 import RedesSociales from "@/components/Header/RedesSociales.vue";
-import { ref } from 'vue'
-
+import { ref } from "vue";
 
 export default {
   components: {
-    LaicaLogo,
     RedesSociales,
   },
-  setup () {
+  setup() {
     return {
-        bodyStyle: {
-            maxWidth: '1000px',
-        },
-        showModal: ref(false),
-        segmented: true
-    }
+      bodyStyle: {
+        maxWidth: "1000px",
+      },
+      showModal: ref(false),
+      segmented: true,
+    };
   },
 };
 </script>

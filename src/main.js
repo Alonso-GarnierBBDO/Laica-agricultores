@@ -21,7 +21,6 @@ import VueParticles from 'vue-particles'
 
 
 
-
 createApp(App)
     .use(store)
     .use(router)

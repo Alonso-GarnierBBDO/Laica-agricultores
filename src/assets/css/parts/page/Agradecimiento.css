@@ -19,6 +19,6 @@
 
 @media (max-width: 1600px) {
     .content-agradecimiento{
-        grid-template-columns: 35% 55%;
+        grid-template-columns: 35% calc(65% - 100px);
     }
 }

@@ -1,8 +1,8 @@
 <template>
     <div class="content-form-agradecimiento">
         <h2>Dejá tu mensaje de agradecimiento a todos los que están detrás de la dulzura.</h2>
-        <p>Y si querés conocer más sobre su día a día, participá en el <strong>SUGAR TOUR</strong> en San Carlos y descubrí de cerca el trabajo detrás de nuestras personas agricultoras.</p>
-        <img src="@/assets/img/content-form.svg" alt="">
+        <p>Y participá por una CANASTA DE PRODUCTOS DE LAICA, cosechados con esfuerzo y dedicación especialmente para vos. </p>
+        <img src="@/assets/img/canasta.png" alt="">
     </div>
 </template>
 

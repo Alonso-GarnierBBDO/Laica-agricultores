@@ -28,7 +28,7 @@
             </div>
             <div class="input-file">
                 <label for="message">MENSAJE <span>*</span></label>
-                <textarea v-on:blur="formInput" name="" id="message" cols="10" rows="2" v-model="validation.value.message"></textarea>
+                <textarea v-on:blur="formInput" name="" id="message" cols="10" rows="1" v-model="validation.value.message"></textarea>
                 <p class="error-message" v-if="validation.errors.message">{{ validation.errors.message }}</p>
             </div>
             <button @click="sendForm" :disabled="validation.sendMessage ? true : false" class="send_form" type="button">{{ validation.textSubmit }}</button>
@@ -57,7 +57,7 @@
                 role="dialog"
                 aria-modal="true"
             >
-                <iframe src ="https://www.um.es/docencia/barzana/DAWEB/Lenguaje-de-programacion-JavaScript-1.pdf" type="application/pdf"></iframe>
+                <iframe src ="https://www.detrasdeladulzura.com/pdf/agricultura.pdf" type="application/pdf"></iframe>
             </n-card>
         </n-modal>
 
